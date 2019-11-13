@@ -10,7 +10,7 @@
 
 > | Chapter | Subject                                  | Note | Presenter                                |
 > | ------- | ---------------------------------------- | ---- | ---------------------------------------- |
-> | 1       | [자바스크립트 / 모던 자바스크립트]() |      | [이동훈](https://github.com/ehdgns1766) [양승희](https://github.com/ehdgns1766) |
+> | 1       | [자바스크립트 / 모던 자바스크립트]() |      | [이동훈](https://github.com/donghunee) [양승희](https://github.com/seunghee63) |
 > | 1       | [TODO리스트 만들기 state, props, componente, state, setState, css, layout ]() |      | [이재현](https://github.com/2Re-play) [김해리](https://github.com/khl6235) |
 > | 2       | [TODO LIST 회고/리뷰, *복습/ 학습내용 공유]() |      |  |
 > | 3       | [컴포넌트/ 라이프사이클/ 불변성]() |      |  |
