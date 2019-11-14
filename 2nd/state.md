@@ -22,7 +22,7 @@ input은 실제 입력값을 받을 자리이므로 비워두고, todos는 두 �
 ## 2. setState
 
 * state에 있는 값을 바꾸기 위해서는 this.setState 필요
-* 객체로 전달되는 값을 업데이트
+* 객체로 전달되는 값을 비동기로 업데이트 (setState 직후에 바로 this.state를 호출하는 것은 신뢰 불가)
 * setState가 호출되면 컴포넌트가 리렌더링
 
 ~~~javascript
