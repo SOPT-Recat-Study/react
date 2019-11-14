@@ -9,11 +9,11 @@ https://kkiuk.tistory.com/291. => 크롬에서 react debugging tool 설치 방�
 
 Performance에서 record(검은 동그라미) 누르고 페이지 새로고침 후 stop 하면 이런식으로 뜬다.
 
-![performance](./performance.png)
+![performance](./image/performance.png)
 
 Timings을 보면 걸린 시간을 볼 수 있음.
 
-![highlight](./highlight.png)
+![highlight](./image/highlight.png)
 
 이 과정을 거치고 나면 컴포넌트마다 하이라이트 박스가 쳐짐. input에 타이핑을 하면 input뿐만 아니라 모든 컴포넌트에 하이라이트가 된다. 즉, 모든 컴포넌트가 리렌더링 됨...! 이를 방지하기 위해 `shouldComponentUpdate`를 사용한다.
 
@@ -36,7 +36,7 @@ class TodoList extends Component{
 
 토글될 때마다 모든 TodoItem 데이터들이 리렌더링
 
-![toggle](./toggle.png)
+![toggle](./image/toggle.png)
 
 따라서 TodoItem의 done 값이 다른 것만 렌더링하도록 코드를 추가한다.
 
