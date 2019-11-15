@@ -411,8 +411,8 @@ class Subject extends Component {
      render () { 
          return (
                  <header> // 컴포넌트를 만들때는 반드시 하나의 최상위 태그만 써야한다.
-                     <h1>${this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
-                     ${this.props.sub}
+                     <h1>{this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
+                     {this.props.sub}
                  </header>
          );
      }
@@ -436,8 +436,8 @@ class Subject extends Component {
      render () { 
          return (
                  <header> // 컴포넌트를 만들때는 반드시 하나의 최상위 태그만 써야한다.
-                     <h1>${this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
-                     ${this.props.sub}
+                     <h1>{this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
+                     {this.props.sub}
                  </header>
          );
      }
@@ -458,8 +458,8 @@ class Subject extends Component {
      render () { // 일반적인 js 함수는 function render()와 같이 선언하지만 최신 스펙의 js에서 class 안에 소속되어 있는 메소드는 function 키워드를 생략한다.
          return (
                  <header> // 컴포넌트를 만들때는 반드시 하나의 최상위 태그만 써야한다.
-                     <h1>${this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
-                     ${this.props.sub}
+                     <h1>{this.props.title}</h1> // APP 컴포넌트에서 받은 props 접근 방식
+                     {this.props.sub}
                  </header>
          );
      }
@@ -468,6 +468,9 @@ class Subject extends Component {
 이렇게 컴포넌트에 속성을 정의해주면서 Subject의 컴포넌트에서 props를 통해서 데이터를 받아서 구현할 수 있다!
 
 ## 15. React Developer Tools
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi  
+
 
 현재의 리액트 앱의 state를 확인할 수 있는 tool
 react 홈페이지의 community 들어가면 tools가 있고 
