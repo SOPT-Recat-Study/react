@@ -11,12 +11,12 @@
 > | Chapter | Subject                                  | Note | Presenter                                |
 > | ------- | ---------------------------------------- | ---- | ---------------------------------------- |
 > | 1       | [자바스크립트 / 모던 자바스크립트]() |      | [이동훈](https://github.com/donghunee) [양승희](https://github.com/seunghee63) |
-> | 1       | [TODO리스트 만들기 state, props, componente, state, setState, css, layout ]() |      | [이재현](https://github.com/2Re-play) [김해리](https://github.com/khl6235) |
-> | 2       | [TODO LIST 회고/리뷰, *복습/ 학습내용 공유]() |      |  |
-> | 3       | [컴포넌트/ 라이프사이클/ 불변성]() |      |  |
-> | 4       | [네트워크 쏴보기 (fetch / axios) *스노우 앱 만들기]() |      | |
-> | 5       | [토이프로젝트 만들기, 재사용 상태관리, state, props]() |      |  |
-> | 6       | [CSS/ SASS, 네트워크, 훅, 리덕스, 타입스크립트]() |      | |
+> | 2       | [TODO리스트 만들기 state, props, componente, state, setState, css, layout ]() |      | [이재현](https://github.com/2Re-play) [김해리](https://github.com/khl6235) |
+> | 3       | [TODO LIST 회고/리뷰, *복습/ 학습내용 공유]() |      |  |
+> | 4       | [라이프사이클 / 네트워크 쏴보기 (fetch / axios)]() |      | [양승희](https://github.com/) [이동훈](https://github.com/ehdgns1766)|
+> | 5       | [우리만의 기획 경선! 롤 분배]() |      | |
+> | 6       | [프로젝트 기간]() |      |  |
+> | 7       | [CSS/ SASS, 네트워크, 훅, 리덕스, 타입스크립트]() |      | |
 
 
 ## Contributors
