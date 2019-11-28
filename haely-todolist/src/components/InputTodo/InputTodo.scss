@@ -1,0 +1,41 @@
+@import "../../styles/utils";
+
+.todo-input { //InputTodo.js에서 className
+    
+    border-bottom: 1px solid $oc-gray-2;
+    display: flex;
+    padding: 1rem;
+
+    input{
+        flex: 1;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid $oc-gray-4;
+        &:focus{
+            border-bottom: 1px solid $oc-cyan-6;
+        }
+    }
+
+    .add-button {
+        width: 5rem;
+        height: 2rem;
+        margin-left: 1rem;
+        border: 1px solid $oc-cyan-6;
+        color: $oc-cyan-7;
+        font-weight: 500;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            background: $oc-cyan-7;
+            color: white;
+        }
+        &:active{
+            background: $oc-cyan-8;
+        }
+    }
+}

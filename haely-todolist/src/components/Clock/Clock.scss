@@ -1,0 +1,21 @@
+@import "../../styles/utils";
+
+.clock {
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    margin-right: auto;
+    width: auto;
+    background: white;
+    
+    @media (max-width: 768px){
+        margin-top: 1rem;
+        width: calc(100% - 2rem);
+    }
+    h1{
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 100;
+        margin: 0;
+    }
+
+}
