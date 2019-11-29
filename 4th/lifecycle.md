@@ -10,7 +10,7 @@
 
 
 
-##**React** **Life Cycle**
+## **React** **Life Cycle**
 
 ![image](https://user-images.githubusercontent.com/41153567/69845538-5e13f180-12b4-11ea-8448-55d68eaca192.png)
 ![image](https://user-images.githubusercontent.com/41153567/69845550-65d39600-12b4-11ea-96c0-b7048755f67e.png)
@@ -19,7 +19,7 @@
   - <u>실행 이벤트</u> 관점에서 **mount/update/unmount**로 구분 
   - <u>실행 단계</u> 관점에서는 **랜더링전/DOM 반영전/DOM 반영이후**로 구분 
 
-
+<br>
 
 ### constructor
 
@@ -31,7 +31,7 @@ constructor(props){
 
 생성자 메소드로 컴포넌트가 생성될 때 단 한번만 실행된다. 이 메소드에서만 `state`를 설정할 수 있다.
 
-
+<br>
 
 ### Mount
 
@@ -64,7 +64,7 @@ constructor(props){
 
    컴포넌트가 만들어지고 `render`가 호출된 이후에 호출되는 메소드이기때문에, **DOM**에 접근할 수 있습니다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동을 한다.
 
-
+<br>
 
 ### Props Update
 
@@ -117,6 +117,7 @@ constructor(props){
    컴포넌트 업데이트 직후에 호출되는 메소드다. componentDidUpdate에서는 render이 완료되었기 때문에 **DOM**에 접근할 수 있습니다.
 
 
+<br>
 
 ### State Update
 
@@ -127,6 +128,7 @@ setState 호출을 통해 state가 업데이트될 때의 과정이다. props up
 3. render
 4. componentDidUpdate
 
+<br>
 
 
 ### Unmount
@@ -143,13 +145,12 @@ componentWillUnmount()는 더는 컴포넌트를 사용하지 않을 때 발생�
 
    컴포넌트가 소멸된 시점에(DOM에서 삭제된 후) 실행되는 메소드다. 컴포넌트 내부에서 타이머나 비동기 API를 사용하고 있을 때, 이를 제거하기에 유용하다.
 
-   
+  
+<br>
 
-*기타!
+**기타!
 
 ### Error
-
-에러 발생 시를 위한 componentDidCatch도 있습니다. 리액트 16에서 추가되었습니다.
 
 ```jsx
 componentDidCatch(error, info) {
@@ -157,7 +158,7 @@ componentDidCatch(error, info) {
 }
 ```
 
-위와 같이 사용하고, 최상위 컴포넌트에 한 번만 넣어주면 됩니다. 에러 발생 시 어떻게 대처할 것인지를 정의할 수 있다. 
+에러 발생 시를 위한 메소드로, 위와 같이 사용하며 최상위 컴포넌트에 한 번만 넣어주면 된다. 에러 발생 시 어떻게 대처할 것인지를 정의할 수 있다. 
 
 
 
@@ -171,6 +172,7 @@ componentDidCatch(error, info) {
 
 **componentWillUpdate의 대체 역할**로 작성된 메서드로 DOM이 업데이트 직전에 호출된다. (이 라이프 사이클은 많이 필요하지 않지만, 렌더링되는 동안 수동으로 스크롤 위치를 유지해야할 때와 같은 경우에는 유용할 수 있다)
 
+<br>
 
 
 > **main.js**
