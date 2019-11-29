@@ -35,7 +35,7 @@ constructor(props){
 
 ### Mount
 
-컴포넌트가 시작되면 우선 context, defaultProps와 state를 저장힌다. 그 후에  `componentWillMount ` 메소드를 호출합니다. 그리고  `render `로 컴포넌트를 DOM에 부착한 후 Mount가 완료된 후  `componentDidMount `가 호출된다.
+컴포넌트가 시작되면 우선 context, defaultProps와 state를 저장힌다. 그 후에  `componentWillMount ` 메소드를 호출다. 그리고  `render `로 컴포넌트를 DOM에 부착한 후 Mount가 완료된 후  `componentDidMount `가 호출된다.
 
 1. state, context, defaultProps 저장
 
@@ -62,13 +62,13 @@ constructor(props){
    }
    ```
 
-   컴포넌트가 만들어지고 `render`가 호출된 이후에 호출되는 메소드이기때문에, **DOM**에 접근할 수 있습니다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동을 한다.
+   컴포넌트가 만들어지고 `render`가 호출된 이후에 호출되는 메소드이기때문에, **DOM**에 접근할 수 있다. 그래서 여기에서는 주로 AJAX 요청을 하거나, setTimeout, setInterval같은 행동을 한다.
 
 <br>
 
 ### Props Update
 
-업데이트되기 전에 업데이트가 발생하였음을 감지하고, **componentWillReceiveProps** 메소드가 호출됩니다. 그 후 **shouldComponentUpdate**, **componentWillUpdate**가 차례대로 호출된 후, 업데이트가 완료(**render**)되면 **componentDidUpdate**가 됩니다. <u>이 메소드들은 첫 번째 인자로 바뀔 props에 대한 정보를 가지고 있습니다.</u> componentDidUpdate만 이미 업데이트되었기 때문에 바뀌기 이전의 props에 대한 정보를 가지고 있습니다.
+업데이트되기 전에 업데이트가 발생하였음을 감지하고, **componentWillReceiveProps** 메소드가 호출된다. 그 후 **shouldComponentUpdate**, **componentWillUpdate**가 차례대로 호출된 후, 업데이트가 완료(**render**)되면 **componentDidUpdate**가 된다. <u>이 메소드들은 첫 번째 인자로 바뀔 props에 대한 정보를 가지고 있다.</u> componentDidUpdate만 이미 업데이트되었기 때문에 바뀌기 이전의 props에 대한 정보를 가지고 있다.
 
 1. ### componentWillReceiveProps(nextProps)
 
@@ -100,7 +100,7 @@ constructor(props){
    }
    ```
 
-   `shouldComponentUpdate`가 불린 이후에 컴포넌트 업데이트 직전에서 호출되는 메소드이다. 새로운 props 또는 state가 반영되기 직전 새로운 값들을 받는다. 주의사항이 있는데, componentWillUpdate에서는 state를 바꿔서는 안 됩니다. 아직 props도 업데이트하지 않았으므로 state를 바꾸면 또 shouldComponentUpdate가 발생합니다. 따라서 **this.setState()를 사용하면 무한 루프가 일어나게 되므로** 사용하면 안된다. 
+   `shouldComponentUpdate`가 불린 이후에 컴포넌트 업데이트 직전에서 호출되는 메소드이다. 새로운 props 또는 state가 반영되기 직전 새로운 값들을 받는다. 주의사항이 있는데, componentWillUpdate에서는 state를 바꿔서는 안 된다. 아직 props도 업데이트하지 않았으므로 state를 바꾸면 또 shouldComponentUpdate가 발생다. 따라서 **this.setState()를 사용하면 무한 루프가 일어나게 되므로** 사용하면 안된다. 
 
    ![image](https://user-images.githubusercontent.com/41153567/69845560-6ec46780-12b4-11ea-86ac-dbaf5e43bf75.png)
 
@@ -114,7 +114,7 @@ constructor(props){
    }
    ```
 
-   컴포넌트 업데이트 직후에 호출되는 메소드다. componentDidUpdate에서는 render이 완료되었기 때문에 **DOM**에 접근할 수 있습니다.
+   컴포넌트 업데이트 직후에 호출되는 메소드다. componentDidUpdate에서는 render이 완료되었기 때문에 **DOM**에 접근할 수 있다.
 
 
 <br>
